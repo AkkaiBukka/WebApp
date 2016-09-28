@@ -4,6 +4,8 @@
   "description": "Sattam Rakshit web app",
   "main": "server.js",
   "dependencies": {
+    "bower": "^1.7.9",
+    "ejs": "^2.5.2",
     "express": "^4.14.0"
   },
   "devDependencies": {},
