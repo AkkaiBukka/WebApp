@@ -1,1 +1,44 @@
-HELLO SATTAM. HOW ARE YOU??
+<html>
+<head>
+
+    <!-- CSS (load bootstrap) -->
+    
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="css/style.css">
+    
+
+  
+   
+
+</head>
+
+<!-- apply our angular app to our site -->
+<body>
+  <script type="text/javascript" src="libs/requirejs/require.js" data-main="js/main.js"></script>
+<div data-ng-controller="homeController as HomeCtrl">
+<div class="well-lg text-left logoBackground">
+   <image src={{HomeCtrl.image}}></image>
+</div>
+<div>
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav navMargins">
+      <li class="active"><a ui-sref="home">HOME</a></li>
+        <li><a>REVIEWS</a></li>
+        <li><a>PHOTOGRAPHY TIPS</a></li>
+        <li><a>CAMERA REVIEWS</a></li>        
+        <li><a>GEAR GUIDE</a></li>
+        <li><a>PHOTO SPOT</a></li>
+        <li><a>LENSES</a></li>
+        <li><a>PHOTO EDIT</a></li>
+        <li><a>SIGN UP</a></li>
+        <li><a>LOG IN</a></li>
+    </ul>
+  </nav>
+  </div>
+<div  ui-view>
+</div>
+</div>
+
+</body>
+</html>
